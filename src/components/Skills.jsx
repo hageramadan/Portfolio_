@@ -165,7 +165,7 @@ const Skills = ({ darkMode }) => {
                                 </div>
 
                                 {/* Progress Bar Section */}
-                                <div className='space-y-3'>
+                                <div className='space-y-3 hidden md:block'>
                                     <div className='flex justify-between items-end'>
                                         <span className={`text-sm font-medium ${theme.textSecondary}`}>
                                             Proficiency

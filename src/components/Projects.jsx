@@ -216,7 +216,7 @@ const Projects = ({ darkMode }) => {
                 <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300'>
                   <button
                     onClick={() => setSelectedProject(project)}
-                    className='w-10 h-10 rounded-full bg-white text-gray-900 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:bg-orange-500 hover:text-white'
+                    className=' hidden w-10 h-10 rounded-full bg-white text-gray-900 md:flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:bg-orange-500 hover:text-white'
                   >
                     <FaEye className='w-4 h-4' />
                   </button>
@@ -264,7 +264,7 @@ const Projects = ({ darkMode }) => {
                 <button
                   onClick={() => setSelectedProject(project)}
                   className={`
-                    flex items-center gap-2 text-sm font-medium
+                    hidden md:flex items-center gap-2 text-sm font-medium
                     transition-all duration-300 group-hover:gap-3
                     ${darkMode ? 'text-orange-400 hover:text-orange-300' : 'text-orange-600 hover:text-orange-700'}
                   `}
@@ -299,7 +299,7 @@ const Projects = ({ darkMode }) => {
 
       {/* Modal for Project Details */}
       {selectedProject && (
-        <div className='fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn' onClick={() => setSelectedProject(null)}>
+        <div className='fixed inset-0  z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn' onClick={() => setSelectedProject(null)}>
           <div 
             className={`
               relative max-w-2xl w-full rounded-2xl overflow-hidden
